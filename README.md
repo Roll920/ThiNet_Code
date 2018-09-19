@@ -11,8 +11,7 @@ caffe environment with python:
 ## Usage
 1. Clone the ThiNet repository.
 2. select ThiNet_ICCV or ThiNet_TPAMI subfolder:
-```cd ThiNet_ICCV
-```
+`cd ThiNet_ICCV`
 3. modify your configuration path:
   + modify the *caffe*  path (caffe_root) at the beginning of `net_generator.py` and `compress_model.py`
   + modify ImageNet *lmdb* file path in line 212 and line 217 of `net_generator.py`
