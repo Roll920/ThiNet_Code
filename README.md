@@ -63,9 +63,9 @@ There are no difference on [VGG16](https://gist.github.com/ksimonyan/211839e770f
 ## Citation
 If you find this work is useful for your research, please cite:
 ```
-@article{ThiNet_ICCV17,
-  title={ThiNet: A Filter Level Pruning Method for Deep Neural Network Compression},
+@CONFERENCE{ThiNet_ICCV17,
   author={Jian-Hao Luo, Jianxin Wu, and Weiyao Lin},
+  title={ThiNet: A Filter Level Pruning Method for Deep Neural Network Compression},
   booktitle={ICCV},
   year = {2017},
   pages={5058-5066},
@@ -73,7 +73,7 @@ If you find this work is useful for your research, please cite:
 ```
 ```
 @article{ThiNet_TPAMI,
-  author = {Jian-Hao Luo, Hao Zhang, Hong-Yu Zhou, Chen-Wei Xie, Jianxin Wu and Weiyao Lin},
+  author = {Jian-Hao Luo, Hao Zhang, Hong-Yu Zhou, Chen-Wei Xie, Jianxin Wu, and Weiyao Lin},
   title = {ThiNet: Pruning CNN Filters for a Thinner Net},
   journal = {IEEE Trans. on Pattern Analysis and Machine Intelligence},
   year = 2008,
