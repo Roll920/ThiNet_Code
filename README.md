@@ -52,7 +52,7 @@ We prune the [VGG_ILSVRC_16_layers model](https://gist.github.com/ksimonyan/2118
 |  ThiNet_ICCV |  69.80%  | 89.53%  | 131.44M  | 9.58B  |
 | ThiNet_TPAMI | 69.74% | 89.41% | 131.44M | 9.58B |
 
-There are no difference between these two methods on [VGG16](https://gist.github.com/ksimonyan/211839e770f7b538e2d8), but ThiNet_TPAMI is much better on [ResNet50](https://github.com/KaimingHe/deep-residual-networks):
+There are no difference on [VGG16](https://gist.github.com/ksimonyan/211839e770f7b538e2d8), but ThiNet_TPAMI is much better on [ResNet50](https://github.com/KaimingHe/deep-residual-networks):
 
 | Method  | Top-1 Acc.  | Top-5 Acc.  | #Param.   | #FLOPs  |
 | ------------- | ------------- | ------------- |  ------------- |  ------------- | 
