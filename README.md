@@ -76,7 +76,7 @@ If you find this work is useful for your research, please cite:
   author = {Jian-Hao Luo, Hao Zhang, Hong-Yu Zhou, Chen-Wei Xie, Jianxin Wu, and Weiyao Lin},
   title = {ThiNet: Pruning CNN Filters for a Thinner Net},
   journal = {IEEE Trans. on Pattern Analysis and Machine Intelligence},
-  year = 2008,
+  year = {2008},
 }
 ```
 
