@@ -1,12 +1,12 @@
 #!/bin/bash
-# cp /data/luojh/net/caffe/ResNet-50-model.caffemodel model.caffemodel
+cp /data/luojh/net/caffe/ResNet-50-model.caffemodel model.caffemodel
 layers=(2a 2b 2c 3a 3b 3c 3d 4a 4b 4c 4d 4e 4f 5a 5b 5c)
 TOOLS=/home/luojh2/Software/caffe-master/build/tools
 gpu=4
 gpus=4,5,6,7
 compression_rate=0.7
 
-for compress_layer in $(seq 4 15)
+for compress_layer in $(seq 0 15)
 do
 	python compress_model.py ${compress_layer} 0 ${compression_rate} ${gpu}
 	python compress_model.py ${compress_layer} 1 ${compression_rate} ${gpu}
