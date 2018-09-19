@@ -1,6 +1,6 @@
 # Caffe Implementation of ThiNet
 * ThiNet: A Filter Level Pruning Method for Deep Neural Network Compression, ICCV 2017.
-* ThiNet: Pruning CNN Filters for a Thinner Net, TPAMI, 2018.
+* ThiNet: Pruning CNN Filters for a Thinner Net, TPAMI 2018.
 * [[ICCV Project Page]](http://lamda.nju.edu.cn/luojh/project/ThiNet_ICCV17/ThiNet_ICCV17.html)   [[Pretrained Models]](https://github.com/Roll920/ThiNet)
 
 ## Requirements 
