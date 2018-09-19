@@ -26,14 +26,14 @@ Python 2.6 & Caffe environment:
 
 ## Other Toolkits
 * Image Resize:
-  1. Note that there are two different strategies to organize ImageNet dataset:
-     + fixed size: each image is firstly resized to 256×256, then center-cropped to obtain a 224×224 regin;
-     + keep aspect ratio: each image is firstly resized with shorter side=256, then center-cropped;
-  2. The default caffe `create_lmdb.sh` file will convert images into 256x256. If you want to keep the original ratio: 
-     + replace `caffe/src/caffe/util/io.cpp` with `toolkit/caffe_lmdb_keep_ratio/io.cpp` 
-     + rebuild caffe
-     + use the provided script `toolkit/caffe_lmdb_keep_ratio/create_lmdb.sh` to create the lmdb file. 
-     + do not forget to modify the configuration path of this script.
+  + Note that there are two different strategies to organize ImageNet dataset:
+     1. fixed size: each image is firstly resized to 256×256, then center-cropped to obtain a 224×224 regin;
+     2. keep aspect ratio: each image is firstly resized with shorter side=256, then center-cropped;
+  + The default caffe `create_lmdb.sh` file will convert images into 256x256. If you want to keep the original ratio: 
+     1. replace `caffe/src/caffe/util/io.cpp` with `toolkit/caffe_lmdb_keep_ratio/io.cpp` 
+     2. rebuild caffe
+     3. use the provided script `toolkit/caffe_lmdb_keep_ratio/create_lmdb.sh` to create the lmdb file
+     4. and, do not forget to modify the configuration path of this script.
 
 * FLOPs Calculation:
   ```
