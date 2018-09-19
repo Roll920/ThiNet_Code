@@ -4,7 +4,7 @@
 * [[ICCV Project Page]](http://lamda.nju.edu.cn/luojh/project/ThiNet_ICCV17/ThiNet_ICCV17.html)   [[Pretrained Models]](https://github.com/Roll920/ThiNet)
 
 ## Requirements 
-caffe environment with python:
+Python 2.6 & Caffe environment:
 * Python2.6
 * Caffe & Caffe's Python interface
 
