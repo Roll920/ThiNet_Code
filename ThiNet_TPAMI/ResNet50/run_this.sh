@@ -8,10 +8,10 @@ compression_rate=0.7
 
 for compress_layer in $(seq 0 15)
 do
-	python compress_model.py ${compress_layer} 0 ${compression_rate} ${gpu}
-	python compress_model.py ${compress_layer} 1 ${compression_rate} ${gpu}
+    python compress_model.py ${compress_layer} 0 ${compression_rate} ${gpu}
+    python compress_model.py ${compress_layer} 1 ${compression_rate} ${gpu}
 
-	compress_block=1
+    compress_block=1
     log_name="ResNet_50.log"
     LOG=${layers[compress_layer]}_$compress_block/logs/${log_name}    
     if [ ! -d "${layers[compress_layer]}_$compress_block/logs" ]; then
