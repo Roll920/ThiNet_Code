@@ -18,7 +18,8 @@ caffe environment with python:
   + modify ImageNet *dataset* path in line 54, 55, 60 of `compress_model.py`
   + modify line 2 and 4 in `run_this.sh` with correct file path;
 4. Run the pruning demo:
-```./run_this.sh
+```
+./run_this.sh
 ```
 
 ## Other Toolkits
