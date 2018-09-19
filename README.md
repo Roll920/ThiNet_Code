@@ -1,7 +1,7 @@
 # caffe implementation of ThiNet
 * ThiNet: A Filter Level Pruning Method for Deep Neural Network Compression, ICCV 2017.
 * ThiNet: Pruning CNN Filters for a Thinner Net, TPAMI, 2018.
-* [[ICCV Project Page]](http://lamda.nju.edu.cn/luojh/project/ThiNet_ICCV17/ThiNet_ICCV17.html)   [[TPAMI Project Page]](http://lamda.nju.edu.cn/luojh/project/ThiNet_TPAMI18/ThiNet_TPAMI18.html)[[Pretrained Models]](https://github.com/Roll920/ThiNet)
+* [[ICCV Project Page]](http://lamda.nju.edu.cn/luojh/project/ThiNet_ICCV17/ThiNet_ICCV17.html)   [[Pretrained Models]](https://github.com/Roll920/ThiNet)
 
 ## Requirements 
 caffe environment with python:
@@ -73,10 +73,10 @@ If you find this work is useful for your research, please cite:
 ```
 ```
 @article{ThiNet_TPAMI,
-	author = {Jian-Hao Luo, Hao Zhang, Hong-Yu Zhou, Chen-Wei Xie, Jianxin Wu and Weiyao Lin},
-	title = {ThiNet: Pruning CNN Filters for a Thinner Net},
-	journal = {IEEE Trans. on Pattern Analysis and Machine Intelligence},
-	year = 2008,
+  author = {Jian-Hao Luo, Hao Zhang, Hong-Yu Zhou, Chen-Wei Xie, Jianxin Wu and Weiyao Lin},
+  title = {ThiNet: Pruning CNN Filters for a Thinner Net},
+  journal = {IEEE Trans. on Pattern Analysis and Machine Intelligence},
+  year = 2008,
 }
 ```
 
