@@ -15,10 +15,10 @@ caffe environment with python:
    cd ThiNet_ICCV
    ```
 3. modify your configuration path:
-  + modify the *caffe*  path (caffe_root) at the beginning of `net_generator.py` and `compress_model.py`
-  + modify ImageNet *lmdb* file path in line 212 and line 217 of `net_generator.py`
-  + modify ImageNet *dataset* path in line 54, 55, 60 of `compress_model.py`
-  + modify line 2 and 4 in `run_this.sh` with correct file path;
+   + modify the *caffe*  path (caffe_root) at the beginning of `net_generator.py` and `compress_model.py`
+   + modify ImageNet *lmdb* file path in line 212 and line 217 of `net_generator.py`
+   + modify ImageNet *dataset* path in line 54, 55, 60 of `compress_model.py`
+   + modify line 2 and 4 in `run_this.sh` with correct file path.
 4. Run the pruning demo:
    ```
    ./run_this.sh
@@ -27,9 +27,13 @@ caffe environment with python:
 ## Other Toolkits
 * Image Resize:
   1. Note that there are two different strategies to organize ImageNet dataset:
-    + fixed size: each image is firstly resized to 256×256, then center-cropped to obtain a 224×224 regin;
-    + keep aspect ratio: each image is firstly resized with shorter side=256, then center-cropped;
- 2. The default caffe `create_lmdb.sh` file will convert images into 256x256. If you want to keep the original ratio, replace `caffe/src/caffe/util/io.cpp` with `toolkit/caffe_lmdb_keep_ratio/io.cpp`, rebuild caffe, and use the provided script `toolkit/caffe_lmdb_keep_ratio/create_lmdb.sh` to create the lmdb file. Do not forget to modify the configuration path of this script.
+     + fixed size: each image is firstly resized to 256×256, then center-cropped to obtain a 224×224 regin;
+     + keep aspect ratio: each image is firstly resized with shorter side=256, then center-cropped;
+  2. The default caffe `create_lmdb.sh` file will convert images into 256x256. If you want to keep the original ratio: 
+     + replace `caffe/src/caffe/util/io.cpp` with `toolkit/caffe_lmdb_keep_ratio/io.cpp` 
+     + rebuild caffe
+     + use the provided script `toolkit/caffe_lmdb_keep_ratio/create_lmdb.sh` to create the lmdb file. 
+     + do not forget to modify the configuration path of this script.
 
 * FLOPs Calculation:
   ```
@@ -40,7 +44,7 @@ caffe environment with python:
   **NOTE:** we regard the vector multiplication as **TWO** float-point operations (multiplication and addition). In some paper,  it is calculated as **ONE** operation. Do not be confused if the result is twice larger.
 
 ## Results
-we prune the [VGG_ILSVRC_16_layers model](https://gist.github.com/ksimonyan/211839e770f7b538e2d8) on ImageNet dataset with ratio=0.5:
+We prune the [VGG_ILSVRC_16_layers model](https://gist.github.com/ksimonyan/211839e770f7b538e2d8) on ImageNet dataset with ratio=0.5:
 
 | Method  | Top-1 Acc.  | Top-5 Acc.  | #Param.   | #FLOPs  |
 | ------------- | ------------- | ------------- |  ------------- |  ------------- | 
